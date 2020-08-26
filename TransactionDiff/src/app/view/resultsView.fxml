@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="app.controller.ResultsController">
+    <children>
+        <GridPane layoutX="52.0" layoutY="110.0" prefHeight="148.0" prefWidth="221.0"
+                  style="-fx-border-width: 1; -fx-border-color: #000; -fx-padding: 10;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="142.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="79.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label fx:id="lblFile1Name" style="-fx-font-weight: 900;" text="Label"/>
+                <Label text="Total Records" GridPane.rowIndex="1"/>
+                <Label text="Matching Records" GridPane.rowIndex="2"/>
+                <Label text="Unmatched Records" GridPane.rowIndex="3"/>
+                <Label fx:id="lblFile1Total" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="lblFile1Matching" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="lblFile1Unmatched" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            </children>
+        </GridPane>
+        <GridPane layoutX="325.0" layoutY="110.0" prefHeight="148.0" prefWidth="221.0"
+                  style="-fx-border-width: 1; -fx-border-color: #000; -fx-padding: 10;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="142.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="79.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label fx:id="lblFile2Name" style="-fx-font-weight: 900;" text="Label"/>
+                <Label text="Total Records" GridPane.rowIndex="1"/>
+                <Label text="Matching Records" GridPane.rowIndex="2"/>
+                <Label text="Unmatched Records" GridPane.rowIndex="3"/>
+                <Label fx:id="lblFile2Total" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="lblFile2Matching" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="lblFile2Unmatched" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            </children>
+        </GridPane>
+        <Button layoutX="273.0" layoutY="297.0" mnemonicParsing="false" onAction="#onReportAction"
+                text="Unmatched Report"/>
+        <Button layoutX="205.0" layoutY="297.0" mnemonicParsing="false" onAction="#onBackAction" text="Back"/>
+        <Label layoutX="271.0" layoutY="65.0" text="Summary" underline="true"/>
+    </children>
+</AnchorPane>

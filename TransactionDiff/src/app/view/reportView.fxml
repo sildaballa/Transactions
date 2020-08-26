@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="750.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="app.controller.ReportController">
+    <children>
+        <Label layoutX="242.0" layoutY="45.0" text="Unmatched Report" underline="true"/>
+        <Button layoutX="276.0" layoutY="672.0" mnemonicParsing="false" onAction="#onBackButtonAction" text="Back"/>
+        <ScrollPane layoutX="23.0" layoutY="107.0" prefHeight="242.0" prefWidth="554.0">
+            <content>
+                <TableView fx:id="tableFile1" prefHeight="238.0" prefWidth="547.0">
+                    <columns>
+                        <TableColumn fx:id="columnFile1Date" prefWidth="153.0" text="Date"/>
+                        <TableColumn fx:id="columnFile1Ref" prefWidth="313.0" text="Reference"/>
+                        <TableColumn fx:id="columnFile1Amount" minWidth="0.0" text="Amount"/>
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+        <Label fx:id="lblFile1Name" layoutX="23.0" layoutY="89.0" text="Label">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblFile2Name" layoutX="23.0" layoutY="375.0" text="Label">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <ScrollPane layoutX="22.0" layoutY="397.0" prefHeight="242.0" prefWidth="554.0">
+            <content>
+                <TableView fx:id="tableFile2" prefHeight="238.0" prefWidth="547.0">
+                    <columns>
+                        <TableColumn fx:id="columnFile2Date" prefWidth="153.0" text="Date"/>
+                        <TableColumn fx:id="columnFile2Ref" prefWidth="313.0" text="Reference"/>
+                        <TableColumn fx:id="columnFile2Amount" minWidth="0.0" text="Amount"/>
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

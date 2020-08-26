@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="app.controller.FilePickerController">
+    <children>
+        <Button layoutX="238.0" layoutY="103.0" mnemonicParsing="false" onAction="#onSelectFile2Action" text="Browse"/>
+        <Button layoutX="160.0" layoutY="155.0" mnemonicParsing="false" onAction="#onCompareAction" text="Compare"/>
+        <Button layoutX="238.0" layoutY="69.0" mnemonicParsing="false" onAction="#onSelectFile1Action" text="Browse"/>
+        <Label fx:id="lblStatus" layoutX="100.0" layoutY="192.0" prefHeight="44.0" prefWidth="194.0"
+               text="Please select 2 files and press the compare button" wrapText="true"/>
+        <Label layoutX="131.0" layoutY="25.0" text="Transaction Compare" underline="true"/>
+        <Label fx:id="lblFile1" layoutX="102.0" layoutY="74.0" text="Select File 1"/>
+        <Label fx:id="lblFile2" layoutX="102.0" layoutY="108.0" text="Select File 2"/>
+    </children>
+</AnchorPane>
