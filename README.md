@@ -10,4 +10,6 @@ JAVAFX
 ECLIPSE IDE
 
 To install : 
-Run the command Java -jar JavaFXApp.jar
+1.Download the .jar project
+2.Using CMD go to the folder where the .jar file is 
+3.Run the command Java -jar JavaFXApp.jar
