@@ -9,3 +9,5 @@ JavaSE
 JAVAFX
 ECLIPSE IDE
 
+To install : 
+Run the command Java -jar JavaFXApp.jar
